@@ -12,7 +12,7 @@ export default async function HomePage() {
             <div>
                 <h1>{page.meta.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: page.content }} />
-                <a href="#" className="cta">Commencer</a>
+                <a href="https://github.com/exagyde/cms-template" className="cta">Commencer</a>
             </div>
         </div>
     );
