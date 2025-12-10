@@ -48,13 +48,21 @@ Une base moderne, sobre et prête pour vos futurs projets.
 
 ## 🖥️ Lancer le CMS en mode local / offline
 
-Le CMS se trouve ici :
+1. Lancer le serveur local DecapCMS
 
-```plain
-http://localhost:3000/admin/index.html
+```bash
+npx decap-server
 ```
 
-Pour lancer le site + CMS :
+2. Ouvrir la page admin :
+
+```plain
+http://localhost:3000/admin/
+```
+
+Avec decap-server démarré, l’écran d’authentification disparaîtra.
+
+3. Ensuite pour lancer le site
 
 ```bash
 npm run dev
