@@ -1,0 +1,41 @@
+#home {
+    position: relative;
+}
+
+#home > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100dvh;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0.05;
+}
+
+#home > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.cta {
+    padding: 10px 20px;
+    color: white;
+    background: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.cta:hover {
+    opacity: .7;
+}

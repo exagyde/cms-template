@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow # optionnel
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{title | slugify}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+  - name: "components"
+    label: "Composants"
+    folder: "content/components"
+    create: false
+    delete: false
+    slug: "{{title | slugify}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Contenu", name: "body", widget: "markdown" }

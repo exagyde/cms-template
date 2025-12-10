@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header p {
+    font-weight: 600;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all .5s;
+}
+
+nav a:hover {
+    opacity: .5;
+}
